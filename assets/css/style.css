@@ -6,6 +6,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  overflow-y: scroll;
 }
 h1 {
   font-size: 3.75rem;
@@ -44,6 +45,11 @@ header {
   font-size: 1.125rem;
   letter-spacing: 0.1em;
   color: #ffffff;
+  transition: background-color 0.5s;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #d66926;
 }
 .header-overlay {
   background-color: #2d3651;
@@ -101,8 +107,7 @@ header {
   display: block;
   padding: 20px;
 }
-.header-navbar {
-}
+
 .header-navbar__btn {
   display: none;
 }
@@ -116,9 +121,13 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(2em, max-content));
   gap: 20px;
 }
-.header-navbar__item {
-}
 .header-navbar__link {
+  font-size: 1.25rem;
   padding: 20px;
   display: block;
+  transition: color 0.5s;
+}
+.header-navbar__link:hover,
+.header-navbar__link:focus {
+  color: #d66926;
 }
